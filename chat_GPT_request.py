@@ -20,8 +20,6 @@ def chat_gpt_request(
         Question: {question}
         """
 
-    print('Request:\n', request)
-
     result = client.chat.completions.create(
         messages=[
             {
